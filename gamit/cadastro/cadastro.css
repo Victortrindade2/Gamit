@@ -1,0 +1,114 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    user-select: none;
+}
+
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background:radial-gradient(circle at top, #214d6b 0%, transparent 35%),linear-gradient(135deg,#0d1117,#182533,#101822);
+    color: white;
+}
+
+h2{
+    margin-bottom: 30px;
+    font-size: 34px;
+    font-weight: 600;
+    color: #ffffff;
+    letter-spacing: 1px;
+}
+
+form{
+    width: 450px;
+    background: rgba(24,31,40,.95);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 35px rgba(0,0,0,.5), inset 0 0 0 1px rgba(255,255,255,.05);
+    display: flex;
+    flex-direction: column;
+}
+.nome,
+.senha,
+.email,
+.data,
+.confirmar-senha{
+    width: 100%;
+    margin: 10px 0;
+}
+
+input{
+    width: 100%;
+    padding: 15px;
+    background: #323d4a;
+    border: 1px solid #44505e;
+    border-radius: 4px;
+    color: white;
+    font-size: 15px;
+    transition: .25s;
+}
+
+input::placeholder{
+    color: #93a4b4;
+}
+
+input:focus{
+    outline: none;
+    border-color: #66c0f4;
+    box-shadow: 0 0 12px rgba(102,192,244,.35);
+    background: #394655;
+}
+
+input[type="date"]{
+    color: #93a4b4;
+}
+
+input[type="date"]:focus{
+    color: white;
+}
+
+@media(max-width:500px){
+
+form{
+    width:90%;
+    padding:25px;
+}
+
+h2{
+    font-size:28px;
+}
+
+}
+.cadastrar{
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    margin-left: 15%;
+    background: linear-gradient(to right, #47bfff 0%, #1a9fff 100%);
+    color: white;
+    border: none;
+    border-radius:3px;
+    padding: 10px ;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 1rem;
+}
+.entrar{
+    border: none;
+    background: none;
+    color: #66c0f4;
+    font-size: 15px;
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+}
+.login{
+    color:#1447E6;
+    margin: 0 5px;
+}
