@@ -7,14 +7,4 @@
 </head>
 <body>
 </body>
-<script>
-    const isConnected = localStorage.getItem('isConnected');
-
-    // a variavel isConnected simula uma API de login
-
-    if(!isConnected){
-        window.location.href = 'cadastro/cadastro.php'
-    }
-
-</script>
 </html>
